@@ -2,18 +2,38 @@
     font-family: 'Poiret One', cursive;
 }
 
-/*
-* {
-    border: 1px solid red;
+body {
+  background-color: grey;
 }
-*/
+
+h2 {
+  font-size: 3em;
+}
+
+.page-main {
+  padding: 3em;
+  background: white;
+}
+
+@media screen and (min-width: 851px) {
+  .page-main {
+    width: 850px;
+  }
+}
 
 .logo {
-    max-height: 150px;
+    max-height: 120px;
+}
+/*
+.feat-header {
+  padding-left: 5em;
+}
+*/
+.feat-box {
+  margin-bottom: 2em;
 }
 
-.image-small {
-    height: 300px;
-    width: 300px;
-
+.feat-img {
+  max-width: 85%;
+  margin: auto;
 }
