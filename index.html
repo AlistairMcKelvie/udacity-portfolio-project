@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Alistair McKelvie Portfolio</title>
     <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One">
@@ -11,59 +13,65 @@
   <body>
     <div class="container page-main">
       <header class="row">
-        <div class="col-xs-6"><img src="images_src/udacity_logo.svg" class="logo img-responsive"></div>
+        <div class="col-xs-6"><img src="images_src/udacity_logo.svg" alt="Udacity logo" class="logo img-responsive"></div>
         <div class="col-xs-6 text-uppercase text-right">
           <h1>Alistair McKelvie</h1>
           <h3>Front-end Dev</h3>
         </div>
       </header>
-      <div class="row">
-        <hr>
-      </div>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li><a href="https://github.com/AlistairMcKelvie">Github</a></li>
+            <li class="active"><a href="#">Portfolio</a></li>
+          </ul>
+        </div>
+      </nav>
       <main>
-      <div class="row">
-        <img src="images_src/tree_640.jpg" class="img-responsive img-circle center-block" alt="Main image">
-      </div>
-      <div class="row">
-        <div class="col-sm-12 text-uppercase feat-header">
-          <h2>Featured Work</h2>
+        <div class="row">
+          <img src="images_src/tree.jpg" alt="Winter tree" srcset="images/tree-640.jpg 640w, images/tree-320.jpg 320w" sizes="(min-width: 720px) 640px, 90vw" class="img-responsive img-circle center-block">
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 feat-box">
-          <img src="images_src/vent.jpg" srcset="images/vent-1024.jpg 1024w, images/vent-640.jpg 640w, images/vent-320.jpg 320w" sizes="(min-width: 768px) 313px, 80vw" class="img-responsive img-circle feat-img" data-toggle="modal" data-target="#project1">
-          <h3 class="text-uppercase text-center">Online Resumé</h3>
-          <p class="text-center"><a href="http://github.com">Link to project</a></p>
+        <div class="row">
+          <div class="col-sm-12 text-uppercase feat-header">
+            <h2>Featured Work</h2>
+          </div>
         </div>
-        <div class="col-sm-6 feat-box">
-          <img src="images_src/fireworks.jpg" srcset="images/fireworks-1024.jpg 1024w, images/fireworks-640.jpg 640w, images/fireworks 320w" sizes="(min-width: 768px) 313px, 80vw" class="img-responsive img-circle feat-img" data-toggle="modal" data-target="#project2">
-          <h3 class="text-uppercase text-center">Arcade Game</h3>
-          <p class="text-center"><a href="http://github.com">Link to project</a></p>
+        <div class="row">
+          <div class="col-sm-6 feat-box">
+            <img src="images_src/vent.jpg" alt="Vent" srcset="images/vent-1024.jpg 1024w, images/vent-640.jpg 640w, images/vent-320.jpg 320w" sizes="(min-width: 768px) 313px, 80vw" class="img-responsive img-circle feat-img" data-toggle="modal" data-target="#project1">
+            <h3 class="text-uppercase text-center">Online Resumé</h3>
+            <p class="text-center"><a href="http://github.com">Link to project</a></p>
+          </div>
+          <div class="col-sm-6 feat-box">
+            <img src="images_src/fireworks.jpg" alt="Fireworks" srcset="images/fireworks-1024.jpg 1024w, images/fireworks-640.jpg 640w, images/fireworks 320w" sizes="(min-width: 768px) 313px, 80vw" class="img-responsive img-circle feat-img" data-toggle="modal" data-target="#project2">
+            <h3 class="text-uppercase text-center">Arcade Game</h3>
+            <p class="text-center"><a href="http://github.com">Link to project</a></p>
+          </div>
         </div>
       </main>
       <div class="row">
         <div class="col-sm-6 feat-box">
-          <img src="images_src/computers.jpg" srcset="images/computers-1024.jpg 1024w, images/computers-640.jpg 640w, images/computers-320w" sizes="(min-width: 768px) 313px, 80vw" class="img-responsive img-circle feat-img" data-toggle="modal" data-target="#project3">
+          <img src="images_src/computers.jpg" alt="Old computers" srcset="images/computers-1024.jpg 1024w, images/computers-640.jpg 640w, images/computers-320.jpg 320w" sizes="(min-width: 768px) 313px, 80vw" class="img-responsive img-circle feat-img" data-toggle="modal" data-target="#project3">
           <h3 class="text-uppercase text-center">Website Optimization</h3>
           <p class="text-center"><a href="http://github.com">Link to project</a></p>
         </div>
         <div class="col-sm-6 feat-box">
-          <img src="images_src/building.jpg" srcset="images/building-1024.jpg 1024w, images/building-640.jpg 640w, images/building-320px 320w" sizes="(min-width: 768px) 313px, 80vw" class="img-responsive img-circle feat-img" data-toggle="modal" data-target="#project4">
+          <img src="images_src/building.jpg" alt="Building" srcset="images/building-1024.jpg 1024w, images/building-640.jpg 640w, images/building-320px 320w" sizes="(min-width: 768px) 313px, 80vw" class="img-responsive img-circle feat-img" data-toggle="modal" data-target="#project4">
           <h3 class="text-uppercase text-center">Neighborhood Map</h3>
           <p class="text-center"><a href="http://github.com">Link to project</a></p>
         </div>
       </div>
     </div>
-    <!-- Modal -->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- Modal1-->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Online Resumé</h4>
+            <h4 class="modal-title" id="myModalLabel1">Online Resumé</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="images/vent-640.jpg" srcset="images/vent-1024.jpg 1024w, images/vent-640.jpg 640w, images/vent-320.jpg 320w" sizes="(min-width: 768px) 568px, 100vw">
-            This was my first project in this class. I learned a lot about HTML and CSS.
+            <img class="img-responsive" src="images/vent-640.jpg" alt="Vent" srcset="images/vent-1024.jpg 1024w, images/vent-640.jpg 640w, images/vent-320.jpg 320w" sizes="(min-width: 768px) 568px, 100vw">
+            A resumé project!
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -71,15 +79,16 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- Modal2-->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Arcade Game</h4>
+            <h4 class="modal-title" id="myModalLabel2">Arcade Game</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="images/fireworks-640.jpg" srcset="images/fireworks-1024.jpg 1024w, images/fireworks-640.jpg 640w, images/fireworks-320.jpg 320w" sizes="(min-width: 768px) 568px, 100vw">
-            This was my first project in this class. I learned a lot about HTML and CSS.
+            <img class="img-responsive" src="images/fireworks-640.jpg" alt="Fireworks" srcset="images/fireworks-1024.jpg 1024w, images/fireworks-640.jpg 640w, images/fireworks-320.jpg 320w" sizes="(min-width: 768px) 568px, 100vw">
+            An arkadé game.
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -87,15 +96,16 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- Modal3-->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Website Optimization</h4>
+            <h4 class="modal-title" id="myModalLabel3">Website Optimization</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="images/computers-640.jpg" srcset="images/computers-1024.jpg 1024w, images/computers-640.jpg 640w, images/computers-320.jpg 320w" sizes="(min-width: 768px) 568px, 100vw">
-            This was my first project in this class. I learned a lot about HTML and CSS.
+            <img class="img-responsive" src="images/computers-640.jpg" alt="Old computers" srcset="images/computers-1024.jpg 1024w, images/computers-640.jpg 640w, images/computers-320.jpg 320w" sizes="(min-width: 768px) 568px, 100vw">
+            Website optimization assignment.
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -103,15 +113,16 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- Modal4-->
+    <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Neighborhood Map</h4>
+            <h4 class="modal-title" id="myModalLabel4">Neighborhood Map</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="images/building-640.jpg" srcset="images/building-1024.jpg 1024w, images/building-640.jpg 640w, images/building-320.jpg 320w" sizes="(min-width: 768px) 568px, 100vw">
-            This was my first project in this class. I learned a lot about HTML and CSS.
+            <img class="img-responsive" src="images/building-640.jpg" alt="Building" srcset="images/building-1024.jpg 1024w, images/building-640.jpg 640w, images/building-320.jpg 320w" sizes="(min-width: 768px) 568px, 100vw">
+            Neighborhood map project.
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
