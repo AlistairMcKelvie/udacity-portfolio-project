@@ -10,6 +10,7 @@ h2 {
   font-size: 3em;
 }
 
+
 .page-main {
   padding: 3em;
   background: white;
@@ -24,11 +25,7 @@ h2 {
 .logo {
     max-height: 120px;
 }
-/*
-.feat-header {
-  padding-left: 5em;
-}
-*/
+
 .feat-box {
   margin-bottom: 2em;
 }
